@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<programList xmlns="ProgramNameSpace">
+  <program name="start" public="false">
+    <description />
+    <paramSection />
+    <localSection />
+    <source>
+      <code>begin
+  userPage()
+  cls()
+  putln("Inici del programa")
+  enablePower()
+  mNomSpeed.vel = 30
+  movej(j1[0], flange, mNomSpeed)
+  waitEndMove()
+  putln("Posicio 1a assolida. Element terminal tancat.")
+  movej(j2[0], flange, mNomSpeed)
+  waitEndMove()
+  putln("Posicio 2")
+  delay(2)
+  mNomSpeed.vel = 10
+  movej(j1[0], flange, mNomSpeed)
+  waitEndMove()
+  putln("Posicio 3")
+  delay(2)
+  mNomSpeed.vel = 30
+  movej(j3[0], flange, mNomSpeed)
+  waitEndMove()
+end
+</code>
+    </source>
+  </program>
+</programList>
